@@ -11,10 +11,14 @@ export default function SearchBar({ onSearchChange }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let cityInput = document.getElementById('cityInput');
-        cityInput.blur();
+        // let cityInput = document.getElementById('cityInput');
+        // cityInput.blur();
         setSearch("");
     };
+
+    const handleOnBlur = () => {
+        setSearch("");
+    }
 
     return (
         <>
@@ -26,12 +30,13 @@ export default function SearchBar({ onSearchChange }) {
                 <input
                     value={Search}
                     onChange={(event) => handleOnChange(event.target.value)}
+                    onBlur={handleOnBlur}
                     type="text"
                     name=""
                     placeholder="Enter a city name"
                     id="cityInput"
-                    className="relative peer z-10 bg-transparent w-12 md:w-full lg:w-full focus:w-full h-12 rounded-full border cursor-pointer outline-none pl-12 focus:cursor-text"
-                    // relative peer z-10 bg-transparent w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:cursor-text transition-width
+                    className="relative peer z-10 bg-transparent w-12 md:w-full lg:w-full focus:w-full h-12 rounded-full border cursor-pointer outline-none pl-12 focus:cursor-text mb-2"
+                // relative peer z-10 bg-transparent w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:cursor-text transition-width
                 />
             </form>
         </>

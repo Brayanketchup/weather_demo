@@ -4,7 +4,6 @@ export default function fetchCurrentLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
-                    console.log("returning city");
                     const latitude = position.coords.latitude;
                     const longitude = position.coords.longitude;
                     
@@ -27,6 +26,8 @@ export default function fetchCurrentLocation() {
                     getStatesName(latitude, longitude)
                         .then((stateName) => {
                             resolve(stateName);
+                            
+                    console.log("returning city");
                         })
                         .catch((error) => {
                             reject(error);

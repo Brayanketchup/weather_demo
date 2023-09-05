@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Feed } from "./components";
+import Feed from "./components/Feed";
 
 
 function App() {

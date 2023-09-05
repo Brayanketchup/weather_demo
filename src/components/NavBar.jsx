@@ -1,6 +1,4 @@
 import React from 'react';
-import SearchBar from './searchbar';
-import Currentloc from './CurrentLoc';
 import NavLogo from './NavLogo';
 
 

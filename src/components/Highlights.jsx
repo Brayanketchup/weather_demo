@@ -45,14 +45,14 @@ const Highlights = ({cityData}) => {
                         <h1 className=''>Sunrise & Sunset</h1>
                         <div className='flex flex-row'>
                             <div className='w-[150px] flex flex-row'>
-                                <img className='h-6 self-end' src="src\assets\icons-sunrise.png" alt="icon" />
+                                <img className='h-6 self-center md:self-end' src="src\assets\icons-sunrise.png" alt="icon" />
                                 <div className='flex flex-col'>
                                     <p className='text-xs text-zinc-500'>Sunrise</p>
                                     <h1 className='pl-2 text-xl'>{formatTime(sunrise)}</h1>
                                 </div>
                             </div>
                             <div className='w-[150px] flex flex-row'>
-                                <img className='h-6 self-end' src="src\assets\icons-sunset.png" alt="icon" />
+                                <img className='h-6 self-center md:self-end' src="src\assets\icons-sunset.png" alt="icon" />
                                 <div className='flex flex-col'>
                                     <p className='text-xs text-zinc-500'>Sunset</p>
                                     <h1 className='pl-2 text-xl'>{formatTime(sunset)}</h1>

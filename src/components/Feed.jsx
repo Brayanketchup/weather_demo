@@ -97,7 +97,7 @@ const Feed = () => {
         console.error('Error fetching weather data:', error);
       });
 
-  }, 500)
+  }, 1000)
 
 
   function debounce(cb, delay = 1000) {

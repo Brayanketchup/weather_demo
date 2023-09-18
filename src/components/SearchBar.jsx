@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import SearchIcon from '@mui/icons-material/Search';
 
 export default function SearchBar({ onSearchChange }) {
     const [Search, setSearch] = useState("");
@@ -11,8 +10,6 @@ export default function SearchBar({ onSearchChange }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // let cityInput = document.getElementById('cityInput');
-        // cityInput.blur();
         setSearch("");
     };
 
@@ -36,8 +33,9 @@ export default function SearchBar({ onSearchChange }) {
                     placeholder="Enter a city name"
                     id="cityInput"
                     className="relative peer z-10 bg-transparent w-12 md:w-full lg:w-full focus:w-full h-12 rounded-full border cursor-pointer outline-none pl-12 focus:cursor-text mb-2"
-                // relative peer z-10 bg-transparent w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:cursor-text transition-width
                 />
+                <img src="src\assets\icons-search.png" className="absolute inset-y-0 my-auto h-6 px-3.5 " alt="Search" />
+
             </form>
         </>
     );

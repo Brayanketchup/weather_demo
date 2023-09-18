@@ -27,7 +27,6 @@ export default function fetchCurrentLocation() {
                         .then((stateName) => {
                             resolve(stateName);
                             
-                    console.log("returning city");
                         })
                         .catch((error) => {
                             reject(error);

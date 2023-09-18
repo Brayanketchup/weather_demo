@@ -29,6 +29,7 @@ const NextDaysForecast = ({ dailyData }) => {
               return 'src/assets/icons-partly-cloudy-day.png'; //day cloudy weather icon
             case 'Rain, Partially cloudy':
             case 'Rain, Overcast':
+            case 'Overcast':
             case 'Rain':
               return 'src/assets/icons-heavy-rain.png'; //rainy weather icon
             default:
@@ -58,8 +59,6 @@ const NextDaysForecast = ({ dailyData }) => {
                 ))
             }
         </div>
-
-
     )
 }
 

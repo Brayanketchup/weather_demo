@@ -40,7 +40,6 @@ const Highlights = ({cityData}) => {
             </h1>
             <div>
                 <div className='flex flex-col lg:flex-row '>
-                    {/* top dif */}
                     <div className=' flex flex-col bg-[#1b191d]  p-5 m-2 rounded-3xl justify-around text-white'>
                         <h1 className=''>Sunrise & Sunset</h1>
                         <div className='flex flex-row'>
@@ -67,14 +66,14 @@ const Highlights = ({cityData}) => {
                         <h1 className=''>Wind</h1>
                         <div className='flex flex-row'>
                             <div className='w-[150px] flex flex-row'>
-                                <img className='h-6 self-end' src="src\assets\icons-wind.png" alt="icon" />
+                                <img className='h-6 self-center md:self-end' src="src\assets\icons-wind.png" alt="icon" />
                                 <div className='flex flex-col'>
                                     <p className='text-xs text-zinc-500'>Wind Speed</p>
                                     <h1 className='pl-2 text-xl'>{windSpeed} mph</h1>
                                 </div>
                             </div>
                             <div className='w-[150px] flex flex-row'>
-                                <img className='h-6 self-end' src="src\assets\icons-wind-rose.png" alt="icon" />
+                                <img className='h-6 self-center md:self-end' src="src\assets\icons-wind-rose.png" alt="icon" />
                                 <div className='flex flex-col'>
                                     <p className='text-xs text-zinc-500'>Wind direction</p>
                                     <h1 className='pl-2 text-xl'>{windDirection} deg</h1>
@@ -88,7 +87,6 @@ const Highlights = ({cityData}) => {
 
 
                 <div className='flex flex-col lg:flex-row'>
-                    {/* right div */}
                     
                     <div className=' flex flex-col bg-[#1b191d] p-5 m-2 rounded-3xl justify-around text-white' >
                         <h3 className='text-xs text-zinc-500'>Humidity</h3>
